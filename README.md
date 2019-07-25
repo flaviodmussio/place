@@ -1,8 +1,8 @@
-# Gest„o de Lugares
+# Gest√£o de Lugares
 
-Este projeto possibilita o usu·rio Criar, Editar, Excluir, Pesquisar, sendo a pesquisa geral ou por nome. 
+Este projeto possibilita o usu√°rio Criar, Editar, Excluir, Pesquisar, sendo a pesquisa geral ou por nome. 
 
-## PrÈ-Requisitos
+## Pr√©-Requisitos
 
 
 ```bash
@@ -16,15 +16,20 @@ ou
 ```
 
 ## Buildar utilizando o Docker
-Abrir o diretÛrio raiz do projeto e rodar o seguinte comando no terminal
+Abrir o diret√≥rio raiz do projeto e rodar o seguinte comando no terminal
 ```bash
-docker build -t xxx --build-arg deploy_env='dev' . && docker run -p 8080:8080 xxx
+docker build -t place --build-arg deploy_env='dev' . && docker run -p 8080:8080 place
 ```
 
-## DocumentaÁ„o
-Ao Buildar a aplicaÁ„o, localhost:{{Porta}}/swagger, exemplo:
+## Documenta√ß√£o
+Ao Buildar a aplica√ß√£o, localhost:{{Porta}}/swagger, exemplo:
 ```bash
 https://localhost:5001/swagger
 ```
+
+## Postman
+O Postman Collection e o Postman Environment est√£o no diret√≥rio
+PostmanCollection_Env
+
 ## GitHub
 [@flaviodmussio](https://github.com/flaviodmussio/place)
