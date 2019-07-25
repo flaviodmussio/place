@@ -2,28 +2,29 @@
 
 Este projeto possibilita o usuário Criar, Editar, Excluir, Pesquisar, sendo a pesquisa geral ou por nome. 
 
-## Instalação
+## Pré-Requisitos
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install foobar
+docker
 ```
 
-## Usage
+ou
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+.Net Core 2.2
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Buildar utilizando o Docker
+Abrir o diretório raiz do projeto e rodar o seguinte comando no terminal
+```bash
+docker build -t xxx --build-arg deploy_env='dev' . && docker run -p 8080:8080 xxx
+```
 
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Documentação
+Ao Buildar a aplicação, localhost:{{Porta}}/swagger, exemplo:
+```bash
+https://localhost:5001/swagger
+```
+## GitHub
+[@flaviodmussio](https://github.com/flaviodmussio/place)
